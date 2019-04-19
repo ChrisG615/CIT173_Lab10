@@ -1,0 +1,25 @@
+Apr 18 09:28:43 localhost kernel: RPC: Registered tcp transport module.
+Apr 18 09:28:43 localhost kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Apr 18 09:28:43 localhost kernel: NET: Registered protocol family 40
+Apr 18 09:28:44 localhost systemd[1]: Started ABRT kernel log watcher.
+Apr 18 09:28:45 localhost NetworkManager[861]: <info>  [1555594125.8824] manager[0x55c30f9830c0]: monitoring kernel firmware directory '/lib/firmware'.
+Apr 18 09:28:46 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+Apr 18 09:28:46 localhost kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Apr 18 09:28:46 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+Apr 18 09:28:46 localhost kernel: IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+Apr 18 09:28:53 localhost kernel: [drm:vmw_stdu_crtc_page_flip [vmwgfx]] *ERROR* Page flip error -16.
+Apr 18 09:28:54 localhost systemd[1]: Startup finished in 1.712s (kernel) + 1.972s (initrd) + 14.659s (userspace) = 18.344s.
+Apr 18 09:29:04 localhost kernel: fuse init (API version 7.27)
+Apr 18 09:29:09 localhost kernel: [drm:vmw_stdu_crtc_page_flip [vmwgfx]] *ERROR* Page flip error -16.
+Apr 18 09:29:11 localhost journal[2000]: disabling plugin because: failed to startup uefi: kernel efivars support missing: /sys/firmware/efi/efivars
+Apr 18 09:29:11 localhost journal[2000]: disabling plugin because: failed to coldplug thunderbolt_power: No support for force power via kernel or bolt
+Apr 18 09:31:58 localhost kernel: e1000: ens33 NIC Link is Down
+Apr 18 09:32:03 localhost kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Apr 18 09:32:07 localhost kernel: e1000: ens33 NIC Link is Down
+Apr 18 09:32:11 localhost kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Apr 18 09:32:37 localhost kernel: nf_conntrack: default automatic helper assignment has been turned off for security reasons and CT-based  firewall rule not found. Use the iptables CT target to attach helpers instead.
+Apr 18 09:33:32 localhost kernel: hrtimer: interrupt took 4711339 ns
+Apr 18 09:42:40 localhost kernel: e1000: ens33 NIC Link is Down
+Apr 18 09:42:46 localhost kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Apr 18 09:42:56 localhost kernel: e1000: ens33 NIC Link is Down
+Apr 18 09:43:00 localhost kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None

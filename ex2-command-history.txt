@@ -1,0 +1,77 @@
+    1  man rsyslog
+    2  sudo yum -y install rsyslog
+    3  sudo systemctl enable rsyslog
+    4  sudo systemctl status rsyslog
+    5  sudo systemctl start rsyslog
+    6  sudo vim /etc/systemd/journald.conf 
+    7  sudo nano /etc/systemd/journald.conf 
+    8  sudo vi /etc/systemd/journald.conf 
+    9  sudo systemctl restart systemd-journald
+   10  sudo systemctl status systemd-journald
+   11  pws
+   12  pwd
+   13  mkdir CIT173_Lab10
+   14  cd CIT173_Lab10
+   15  ls -A /var/log/
+   16  sudo cat /var/log/messages
+   17  sudo cat /var/log/messages | grep kernel
+   18  sudo tail -n 25 /var/log/messages | grep kernel > $HOME/CIT173_Lab10/kernel-log-last-25.txt
+   19  cat $HOME/CIT173_Lab10/kernel-log-last-25.txt 
+   20  cat kernel-log-last-25.txt 
+   21  sudo tail -n 25 /var/log/messages | cat > kernel-log-last-25.txt << grep kernel
+   22  sudo tail -n 25 /var/log/messages | cat > kernel-log-last-25.txt < grep kernel
+   23  sudo tail -n 25 /var/log/messages | grep --line-buffered kernel >> kernel-log-last-25.txt
+   24  cat kernel-log-last-25.txt 
+   25  sudo tail -n 25 /var/log/messages | grep --line-buffered "kernel" >> kernel-log-last-25.txt
+   26  cat kernel-log-last-25.txt 
+   27  tail -n 25 /var/log/messages | grep --line-buffered "kernel" >> kernel-log-last-25.txt
+   28  sudo tail -n 25 /var/log/messages | grep kernel >> kernel-log-last-25.txt
+   29  cat kernel-log-last-25.txt 
+   30  sudo tail -n 25 /var/log/messages | grep kernel
+   31  man cat
+   32  sudo cat /var/log/messages | grep kernel
+   33  sudo tail /var/log/messages | grep kernel
+   34  sudo tail /var/log/messages 
+   35  sudo cat /var/log/messages | grep kernel | tail -n 25 >> kernel-log-last-25.txt
+   36  cat kernel-log-last-25.txt 
+   37  logger Help, I've fallen and I can't get up
+   38  sudo tail -n 1 /var/log/messages 
+   39  sudo cat /var/log/messages > my-system-log.txt
+   40  cat my-system-log.txt 
+   41  sudo tail -n 1 /var/log/messages 
+   42  cat my-system-log.txt | grep Help
+   43  cat /etc/rsyslog.conf > rsyslog.conf
+   44  cat rsyslog.conf 
+   45  clear
+   46  sudo vi /etc/rsyslog.conf 
+   47  sudo cp /etc/rsyslog.conf ~/CIT173_Lab10/new-rsyslog.conf 
+   48  ls
+   49  cat new-rsyslog.conf 
+   50  clear
+   51  shutdown -r now
+   52  sudo cat /var/log/all-info.log 
+   53  sudo cat /var/log/all-warnings.log 
+   54  cd CIT173_Lab10/
+   55  sudo cp /var/log/all-info.log ~/CIT173_Lab10/all-info.log
+   56  sudo cp /var/log/all-warnings.log ~/CIT173_Lab10/all-warnings.log
+   57  ls
+   58  cat all-warnings.log 
+   59  sudo chown christopher all-warnings.log all-info.log 
+   60  cat all-warnings.log 
+   61  cat all-info.log 
+   62  timedatectl
+   63  sudo timedatectl set-local-rtc 1 --adjust-system-clock
+   64  timedatectl
+   65  sudo date --set="19700101 00:00:00"
+   66  timedatectl
+   67  sudo yum -y install ntpd
+   68  sudo yum -y install ntp
+   69  ls -A /etc/
+   70  sudo vi /etc/ntp.conf 
+   71  sudo systemctl enable ntpd
+   72  sudo systemctl start ntpd
+   73  sudo systemctl status ntpd
+   74  timedatectl
+   75  sudo cat /etc/ntp.conf > ntp.conf
+   76  ls
+   77  history > ex2-command-history.txt
